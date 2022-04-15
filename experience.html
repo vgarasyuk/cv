@@ -185,10 +185,68 @@
         border-bottom-color: #f5f5f6
     }
 }
+              body {
+            background: linear-gradient(155deg, #DEB887 8.33%, #808080 38.33%, #2F4F4F 63.33%); 
+            background-attachment: fixed;
+        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+        .bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.rounded-4 { border-radius: .5rem; }
+.rounded-5 { border-radius: .75rem; }
+.rounded-6 { border-radius: 1rem; }
+
+.modal-sheet .modal-dialog {
+  width: 380px;
+  transition: bottom .75s ease-in-out;
+  background-image: background: rgba(0, 170, 238, 0.9);
+}
+.modal-sheet .modal-footer {
+  padding-bottom: 2rem;
+}
+
+.modal-alert .modal-dialog {
+  width: 380px;
+  background-image: background: rgba(0, 170, 238, 0.9);
+}
+
+.border-right { border-right: 1px solid #eee; }
+
+.modal-tour .modal-dialog {
+  width: 380px;
+  background-image: background: rgba(0, 170, 238, 0.9);
+}
+
+.modal-content {
+  background: background: rgba(0, 170, 238, 0.9);
+}
+.bg-darks {
+    --bs-bg-opacity: 0.2;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+.bg-darkss {
+    --bs-bg-opacity: 0.6;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
     </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   </head>
-  <body class="text-center text-white bg-dark">
+  <body class="text-center text-white">
     
   <header class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column mb-auto" style="max-width: 42em;">
     <div>
@@ -207,7 +265,7 @@
         <div class="col-md-10">
             <ul class="cbp_tmtimeline">
                 <li>
-                    <time class="cbp_tmtime" datetime="2017-11-04T18:30"><span class="text-primary" id="today"></span> <span class="large text-warning">11.2021 ...</span></time>
+                    <time class="cbp_tmtime" datetime="2017-11-04T18:30"><span class="text-danger large" id="today"></span> <span class="large text-warning">11.2021 ...</span></time>
                     <div class="cbp_tmicon bg-warning"><i class="bi bi-activity"></i></div>
                     <div class="cbp_tmlabel">
                         <h4><a href="javascript:void(0);" class="text-dark" style="text-decoration: none;">JSC “MTBank”</a></h4>
@@ -248,7 +306,7 @@
 
 
  <footer class="mt-auto h5 text-white-50">
-    <span class="text-muted">@<strong>vigilog</strong></span>
+    <span class="text-white">@<strong>vigilog</strong></span>
       &nbsp;<span style="font-size: 1.25em">
       &nbsp;<a href="tel:+375445845456"><i class="bi bi-telephone-fill text-white"></i></a>
       &nbsp;<a href="mailto:vitalygarasuk@gmail.com"><i class="bi bi-envelope-fill text-white"></i></a>
