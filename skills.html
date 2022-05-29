@@ -1,73 +1,17 @@
 <!doctype html>
-<html lang="ru" class="h-100">
+<html lang="ru" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vitali Garasiuk · Skills</title>
     <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/dist/js/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 <link href="cover.css" rel="stylesheet">
       <style>
-                body{
-            background: linear-gradient(155deg, #DEB887 8.33%, #808080 38.33%, #2F4F4F 63.33%); 
-            background-attachment: fixed;
-        }
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-        .bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}
-
-.rounded-4 { border-radius: .5rem; }
-.rounded-5 { border-radius: .75rem; }
-.rounded-6 { border-radius: 1rem; }
-
-.modal-sheet .modal-dialog {
-  width: 380px;
-  transition: bottom .75s ease-in-out;
-  background-image: background: rgba(0, 170, 238, 0.9);
-}
-.modal-sheet .modal-footer {
-  padding-bottom: 2rem;
-}
-
-.modal-alert .modal-dialog {
-  width: 380px;
-  background-image: background: rgba(0, 170, 238, 0.9);
-}
-
-.border-right { border-right: 1px solid #eee; }
-
-.modal-tour .modal-dialog {
-  width: 380px;
-  background-image: background: rgba(0, 170, 238, 0.9);
-}
-
-.modal-content {
-  background: background: rgba(0, 170, 238, 0.9);
-}
-.bg-darks {
-    --bs-bg-opacity: 0.6;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-}
-.bg-darkss {
-    --bs-bg-opacity: 0.6;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-}
    .new { position: relative; }
       </style>
   </head>
@@ -76,11 +20,17 @@
 
   <header class="mb-auto cover-container d-flex w-100 p-3 mx-auto flex-column">
     <div>
+      <nav class="nav nav-masthead justify-content-between">
+      <nav class="nav nav-masthead justify-content-center float-md-start">
+        <a class="moon mx-1 ms-0 text-start" aria-current="page" id="theme-swith"><i class="bi bi-moon-stars-fill text-primary fa-lg"></i></a>
+        <a class="mx-1 text-start changelang" aria-current="page"><i class="bi bi-translate text-white fa-lg"></i></a>
+		  </nav>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="experience.html">Experience</a>
-        <a class="nav-link active" href="skills.html" aria-current="page">Skills</a>
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link lang-0" href="index.html" data-label="Home">Главная</a>
+        <a class="nav-link lang-1" href="experience.html" data-label="Experience">Опыт</a>
+        <a class="nav-link active lang-2" aria-current="page" href="skills.html" data-label="Skills">Навыки</a>
+        <a class="nav-link lang-3" href="about.html" data-label="About">О мне</a>
+      </nav>
       </nav>
     </div>
   </header>
@@ -228,7 +178,7 @@
         </div>     
       </div>
   </main>
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
 
  <footer class="mt-auto h5 text-white-50">
     <span class="text-white">@<strong>vigilog</strong></span>
@@ -286,5 +236,22 @@
 
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/jquery.js"></script>
+
+
+<script type="text/javascript">
+jQuery(function($) {
+  $('.changelang').click(function() {
+    var all = ['.lang-0', '.lang-1', '.lang-2', '.lang-3', '.lang-4', '.lang-10', '.lang-11', '.lang-12', '.lang-13', '.lang-14', '.lang-5', '.lang-6', '.lang-7', '.lang-8', '.lang-9'];
+    all.forEach(function(item){
+        var $chng = $(item);
+        var text = $chng.text();
+        var label = $chng.data('label');
+        $chng.text(label).data('label', text);
+        var $chng = $('.lang-');
+        });
+  });
+});
+	  </script>
   </body>
 </html>

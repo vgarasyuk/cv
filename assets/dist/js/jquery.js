@@ -10,7 +10,7 @@
                 theme_light();
             } catch (e) {
             }
-            $("#theme-swith")[0].innerHTML = '<i class="bi bi-moon-stars-fill text-primary"></i>';
+            $("#theme-swith")[0].innerHTML = '<i class="bi bi-moon-stars-fill text-primary fa-lg"></i>';
             $('#theme-color').attr('content', "#f1f1f1");
             $('#msapplication-navbutton-color').attr('content', "#f1f1f1");
             $('#apple-mobile-web-app-status-bar-style').attr('content', "#f1f1f1");
@@ -22,7 +22,7 @@
                 theme_dark();
             } catch (e) {
             }
-            $(".moon")[0].innerHTML = '<i class="fa fa-sun-o text-warning"></i>';
+            $(".moon")[0].innerHTML = '<i class="fa fa-sun-o text-warning fa-lg"></i>';
             $('#theme-color').attr('content', "#10171e");
             $('#msapplication-navbutton-color').attr('content', "#10171e");
             $('#apple-mobile-web-app-status-bar-style').attr('content', "#10171e");
