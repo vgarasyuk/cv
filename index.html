@@ -86,7 +86,7 @@ animation: marquee 15s infinite linear;
     <div>
       <nav class="nav nav-masthead justify-content-between">
       <nav class="nav nav-masthead justify-content-center float-md-start">
-        <a class="mx-2 text-start" aria-current="page" href="index.html"><i class="bi bi-moon-stars-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Переключить фон"></i></a>
+        <a class="moon mx-2 text-start" aria-current="page" id="theme-swith"><i class="bi bi-moon-stars-fill text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Переключить фон"></i></a>
         <a class="mx-2 text-start" aria-current="page" href="index.html"><i class="bi bi-translate text-white" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Русский"></i></a>
 		  </nav>
       <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -145,6 +145,7 @@ animation: marquee 15s infinite linear;
 
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/jquery.js"></script>
 	  <script>
 	  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
