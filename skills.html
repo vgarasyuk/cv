@@ -10,9 +10,46 @@
 <link href="assets/dist/js/bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 <link href="cover.css" rel="stylesheet">
       <style>
    .new { position: relative; }
+
+.lightbox {
+  /* Default to hidden */
+  display: none;
+
+  /* Overlay entire screen */
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* A bit of padding around image */
+  padding: 1em;
+
+  /* Translucent background */
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  /* Full width and height */
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  /* Size and position background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
       </style>
   </head>
   <body class="text-center text-white bg-dark">
@@ -92,8 +129,8 @@
         
        <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
      <div class="card shadow-sm border border-3 border-dark rounded-5 bg-darks" style="background-color: transparent!important; height:240px;">
-        <a class="overflow-hidden disabled" href="#" style="height: 100px">  
-            <img class="img-fluid rounded-5" src="" width="100%" height="100%"></a>
+        <a class="overflow-hidden disabled" href="#" style="height: 65px">  
+            <img class="img-fluid rounded-5" src="udemy.jpg" width="100%" height="100%"></a>
             <div class="card-body bg-darks rounded-5">
                 <p class="card-text"><span class="lang-13" data-lable="">Основы Бизнес-анализа в ИТ. От А до БА</span><br><small class="text-white">Udemy</small><br><small class="lang-14" data-lable="">корпоративное обучение</small></p>
               <div class="d-flex justify-content-between align-items-center">
@@ -107,7 +144,7 @@
         </div>
        <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
      <div class="card shadow-sm border border-3 border-dark rounded-5 bg-darks" style="background-color: transparent!important; height:240px;">
-        <a class="overflow-hidden" href="#" data-bs-toggle="modal" data-bs-target="#modalImg-1" style="height: 100px">  
+        <a class="overflow-hidden" href="#img1"  style="height: 100px">  
             <img class="img-fluid rounded-5" src="cours-0.jpg" width="100%" height="100%"></a>
             <div class="card-body bg-darks rounded-5">
               <p class="card-text h6">SQL <br><small class="text-white">Sololearn</small></p>
@@ -121,6 +158,9 @@
             </div>
           </div>
         </div>
+<a href="#" class="lightbox" id="img1">
+  <div style="background-image:url('cours-0.jpg')"></div>
+</a>
        <div class="col-sm-12 col-md-6 col-lg-4 pt-3">
      <div class="card shadow-sm border border-3 border-dark rounded-5 bg-darks" style="background-color: transparent!important; height:240px;">
         <a class="overflow-hidden" href="#" data-bs-toggle="modal" data-bs-target="#modalImg-2" style="height: 100px">  
@@ -239,6 +279,7 @@
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/dist/js/jquery.js"></script>
 	  <script>
+    
 window.onload=function(){
 var params = window.location.search.replace('?','').split('&').reduce(
         function(p,e){
