@@ -187,6 +187,7 @@
       &nbsp;<a href="mailto:vitalygarasuk@gmail.com"><i class="bi bi-envelope-fill text-white"></i></a>
       &nbsp;<a href="https://t.me/vigilog"><i class="bi bi-telegram text-white"></i></a>
       &nbsp;<a href="https://www.linkedin.com/in/vigilog/"><i class="bi bi-linkedin text-white"></i></a>
+      &nbsp;<span id="footer_lang" style="opacity: 0.6" class="text-warning"></span>
       </span>
   </footer>
     
@@ -294,7 +295,8 @@ var params = window.location.search.replace('?','').split('&').reduce(
             $('html').attr('lang', "ru");
     		
         }
-
+          let langfooter = $(document.documentElement).attr('data-label');
+          $('#footer_lang').html(langfooter);
 };
           function index(){
               let bc = $(document.documentElement).attr('data-theme');
@@ -316,6 +318,7 @@ var params = window.location.search.replace('?','').split('&').reduce(
               let bd = $(document.documentElement).attr('data-label');
               window.location.href='about.html?theme='+bc+'&lang='+bd;
           };
+
 	  </script>
  
 
