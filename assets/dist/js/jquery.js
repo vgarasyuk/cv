@@ -15,6 +15,8 @@
                 theme_light();
             } catch (e) {
             }
+            let langfooter = $(document.documentElement).attr('data-label');
+            $('#footer_lang').html(langfooter);
             $("#theme-swith")[0].innerHTML = '<i class="bi bi-moon-stars-fill text-primary fa-lg"></i>';
             $('#theme-color').attr('content', "#f1f1f1");
             $('#theme-swith').attr('data-label', "light");
@@ -27,6 +29,8 @@
                 theme_dark();
             } catch (e) {
             }
+            let langfooter = $(document.documentElement).attr('data-label');
+            $('#footer_lang').html(langfooter);
             $(".moon")[0].innerHTML = '<i class="fa fa-sun-o text-warning fa-lg"></i>';
             $('#theme-color').attr('content', "#10171e");
             $('#theme-swith').attr('data-label', "dark");
