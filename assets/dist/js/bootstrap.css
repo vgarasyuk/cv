@@ -27,7 +27,7 @@
             --block-verbose-background: #f7f7f7;
             --theme: "\f186";
             --card-title-color: #6f6f6f;
-            --body-background-color: linear-gradient(155deg, #DEB887 8.33%, #808080 38.33%, #2F4F4F 63.33%); ;
+            --body-background-color: linear-gradient(45deg, #30cfd0, #330867);
             --map-dot-color: #2196f3;
             --body-color: #444;
             --map-background-color: whitesmoke;
@@ -81,7 +81,7 @@
             --block-verbose-background: #111922;
             --map-border-color: #444;
             --map-dot-color: #ff810c;
-            --body-background-color: linear-gradient(155deg, #470082 8.33%, #232323 38.33%, #000000 63.33%);
+            --body-background-color: linear-gradient(135deg, rgb(13, 31, 41) 13%, rgb(26, 63, 105) 51%, rgb(1, 0, 82) 100%);
             --body-color: #d1d1d1;
             --card-background-color: #021624;
             --card-border-color: #38444d;

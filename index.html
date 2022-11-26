@@ -29,19 +29,21 @@
       </nav>
       </nav>
     </div>
-    <div class="marquee" style="opacity: 0.95"><span class="text-success"><strong><big class="badge bg-warning text-dark lang-4" data-label="Open to work">Открыт к предложениям</big></strong></span></div>
-    <div class="marquee" style="opacity: 0.95"><span class="text-success"><strong><big class="badge bg-success text-white lang-5" data-label="Looking for menter (senior | lead) 😊">В поиске ментора (senior | lead) 😊</big></strong></span></div>
+    <div class="marquee" style="opacity: 0.92"><span class="text-success"><strong><big class="badge bg-warning text-dark lang-4" data-label="Open to work">В поисках проектов</big></strong></span></div>
+    <!--<div class="marquee" style="opacity: 0.95"><span class="text-success"><strong><big class="badge bg-success text-white lang-5" data-label="Looking for menter (senior | lead) 😊">В поиске ментора (senior | lead) 😊</big></strong></span></div> -->
   </header>
 
-  <main class="px-3">
-      <img src="img.jpg" class="border border-3 border-white rounded rounded-circle" width="125px" height="125px" alt="...">
+  <main class="px-3"style="margin-top: 180px;">
+      
+      <div id="image-container"></div>
+      
     <h1 class="pt-2 lang-6" data-label="Vitaly Garasuk">Виталий Гарасюк</h1>
       <p class="lead"><small class="lang-7" data-label="11-06-1993 (28 years)">11-06-1993 (28 лет)</small><br>
       <small class="lang-8" data-label="Minsk, Belarus">Минск, Беларусь</small></p>
-      <h1 style="text-shadow: 0.1em 0.1em 0.15em #ffa500" class="lang-9" data-label="Business/System analyst">Бизнес/Системный аналитик</h1>
+      <h1 style="text-shadow: 0.1em 0.1em 0.15em #ffa500" class="lang-9" data-label="Business/System analyst">Бизнес / Системный аналитик</h1>
     <p class="lead px-2 py-1">
-      <a href="https://t.me/vigilog" class="btn btn-outline-primary text-dark fw-bold border-white bg-white lang-10" style="margin-top:10px;" data-label="Send Telegram">Написать в Telegram</a>
-      <a href="#" data-bs-toggle="modal" data-bs-target="#modalDownload" class="btn btn-primary fw-bold border-white lang-11" style="margin-top:10px;" data-label="Download CV">Скачать резюме</a>
+      <a href="https://vigilog.t.me" class="btn btn-outline-primary text-dark fw-bold border-white bg-white lang-10" style="margin-top:10px; border-radius: 0.86em" data-label="Send Telegram">Написать в Telegram</a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modalDownload" class="btn btn-primary fw-bold border-white lang-11" style="margin-top:10px; border-radius: 0.86em" data-label="Download CV">Скачать резюме</a>
     </p>
   </main>
 
@@ -50,25 +52,25 @@
       &nbsp;<span style="font-size: 1.25em">
       &nbsp;<a href="tel:+375445845456"><i class="bi bi-telephone-fill text-white"></i></a>
       &nbsp;<a href="mailto:vitalygarasuk@gmail.com"><i class="bi bi-envelope-fill text-white"></i></a>
-      &nbsp;<a href="https://t.me/vigilog"><i class="bi bi-telegram text-white"></i></a>
+      &nbsp;<a href="https://vigilog.t.me"><i class="bi bi-telegram text-white"></i></a>
       &nbsp;<a href="https://www.linkedin.com/in/vigilog/"><i class="bi bi-linkedin text-white"></i></a>
       &nbsp;<span id="footer_lang" style="opacity: 0.5" class="text-secondary"></span>
       </span>
   </footer>
     
     
-      <div class="modal modal-signin py-5" tabindex="-1" role="dialog" id="modalDownload" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDownloadLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-5 bg-dark">
+      <div class="modal modal-signin" tabindex="-1" role="dialog" id="modalDownload" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalDownloadLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" role="document">
+    <div class="modal-content rounded-6 bg-dark">
       <div class="modal-body p-5 pt-1">
-                  <h4 class="fw-bold mb-0 px-2 pb-4 pt-4 lang-12" data-label="Download CV">Скачать резюме</h4>
-          <a download href="Vitaly Garasuk.pdf" class="w-100 py-2 my-2 btn btn-outline-warning fw-bold rounded-4" type="submit">
+                  <h2 class="fw-bold mb-0 px-2 pb-3 mb-3 pt-5 mt-1 lang-12" data-label="Download CV" style="font-size: 32px">Скачать резюме</h2>
+          <a download href="Vitaly Garasuk.pdf" class="w-100 py-2 my-2 btn btn-outline-warning fw-bold rounded-4" style="border-radius: 0.95em" type="submit">
             HeadHunter
           </a>
-          <a download href="vgarasuk.pdf" class="w-100 py-2 my-2 btn btn-outline-info fw-bold rounded-4 lang-13" data-label="Habr Career" type="submit">
+          <a download href="vgarasuk.pdf" class="w-100 py-2 my-2 btn btn-outline-info fw-bold rounded-4 lang-13"  style="border-radius: 0.95em"data-label="Habr Career" type="submit">
             Habr Карьера
           </a> <hr>
-          <button class="w-100 py-2 mt-4 btn btn-outline-secondary fw-bold rounded-4 lang-14" data-label="Close" data-bs-dismiss="modal" aria-label="Close" type="submit"> Закрыть </button>
+          <button class="w-100 py-2 mt-4 btn btn-outline-secondary fw-bold rounded-4 lang-14" data-label="Close" style="border-radius: 0.95em" data-bs-dismiss="modal" aria-label="Close" type="submit"> Закрыть </button>
       </div>
     </div>
   </div>
@@ -81,7 +83,182 @@
 
 
     <script src="assets/dist/js/jquery.js"></script>
+<script>
+window.onload = createProgress(){}
+</script>
 
+      <script>
+      var RadialProgress = function(size, barSize, barColor, backgroundColor, textColor, zIndex) { // jshint ignore:line
+  this.radialProgress = document.getElementById('image-container');
+  this.style = document.createElement('style');
+  this.progress = 0;
+  var requestAnimationFrame = window.requestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.oRequestAnimationFrame ||
+    window.msRequestAnimationFrame;
+
+  barSize = (barSize % 2 === 1) ? (barSize + 1) : barSize;
+  var innerSize = size - barSize;
+  var innerMargin = barSize / 2;
+
+  this.radialProgress.className = 'radial-progress';
+  this.radialProgress.innerHTML = '<div class="inner-circle">' +
+    '<div class="progress"><img id="somepicrutes" src="img.jpg" class="rounded rounded-circle" width="135px" height="135px" style="margin-top:.0px; border-radius: 50%" alt="..."><img id="somepicrutes2" src="img_2.jpg" class="rounded rounded-circle d-none" width="135px" height="135px" style="margin-top:.0px; border-radius: 50%" alt="..."><' + '/div>' +
+    '</div>' +
+    '<div class="outer-circle">' +
+    '<div class="mask full">' +
+    '<div class="fill"></div>' +
+    '</div>' +
+    '<div class="mask">' +
+    '<div class="fill"></div>' +
+    '<div class="fill fix"></div>' +
+    '</div>' +
+    '</div>';
+
+  this.style.type = 'text/css';
+  this.style.innerHTML = '.radial-progress {' +
+    'width:' + size + 'px;' +
+    'height: ' + size + 'px;' +
+    'position: absolute;' +
+    'margin: auto;' +
+    'margin-top: 130px;' +
+    'top: 0; right: 0; bottom: 0; left: 0;' +
+    'z-index: ' + zIndex + ';' +
+    'background-color: transparent;' +
+    'border-radius: 50%;' +
+    'box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);' +
+    '}' +
+    '.radial-progress .inner-circle {' +
+    'width: ' + innerSize + 'px;' +
+    'height: ' + innerSize + 'px;' +
+    'position: absolute;' +
+    'margin-top: ' + innerMargin + 'px;' +
+    'margin-left: ' + innerMargin + 'px;' +
+    'background-color: ' + backgroundColor + ';' +
+    'border-radius: 50%;' +
+    'z-index: 10;' +
+    '}' +
+    '.radial-progress .inner-circle .progress {' +
+    'position: absolute;' +
+    'margin: auto;' +
+    'top: 0; right: 0; bottom: 0; left: 0;' +
+    'text-align: center;' +
+    'color: ' + textColor + ';' +
+    '}' +
+    '.radial-progress .outer-circle .mask,' +
+    '.radial-progress .outer-circle .fill {' +
+    'width: ' + size + 'px;' +
+    'height: ' + size + 'px;' +
+    'position: absolute;' +
+    'border-radius: 50%;' +
+    '-webkit-backface-visibility: hidden;' +
+    '}' +
+    '.radial-progress .outer-circle .mask {' +
+    'clip: rect(0px, ' + size + 'px, ' + size + 'px, ' + size / 2 + 'px);' +
+    '}' +
+    '.radial-progress .outer-circle .mask .fill {' +
+    'clip: rect(0px, ' + size / 2 + 'px, ' + size + 'px, 0px);' +
+    'background-color: ' + barColor + ';' +
+    '}';
+
+  document.getElementsByTagName('head')[0].appendChild(this.style);
+  document.body.appendChild(this.radialProgress);
+
+  this.remove = function() {
+    var self = this;
+    var scale = 1;
+    var deltaScale = 0.1 / 10;
+
+    function step() {
+      scale += deltaScale;
+      scale = (scale < 0) ? 0 : scale;
+      self.radialProgress.style.transform = 'scale(' + scale + ')';
+
+      if (scale > 1.1) {
+        deltaScale = -1.1 / 8;
+      }
+
+      if (scale > 0) {
+        requestAnimationFrame(step);
+      } else {
+        document.getElementsByTagName('head')[0].removeChild(self.style);
+        document.body.removeChild(self.radialProgress);
+      }
+    }
+
+    requestAnimationFrame(step);
+  };
+
+  this.setProgress = function(progress, duration) {
+    progress = (progress > 100) ? 100 : progress;
+    var self = this;
+    var $maskFull = this.radialProgress.getElementsByClassName('mask full')[0];
+    var $fill = this.radialProgress.getElementsByClassName('fill');
+    var $fillFix = this.radialProgress.getElementsByClassName('fill fix')[0];
+    var $progress = this.radialProgress.getElementsByClassName('progress')[0];
+    var deltaProgress = (progress - this.progress) / (duration * 60);
+
+    function step() {
+      self.progress += deltaProgress;
+      self.progress = (self.progress > progress) ? progress : self.progress;
+      var rotate = self.progress * 1.8;
+      $maskFull.style.transform = 'rotate(' + rotate + 'deg)';
+
+      for (var i = 0; i < $fill.length; ++i) {
+        $fill[i].style.transform = 'rotate(' + rotate + 'deg)';
+      }
+
+      $fillFix.style.transform = 'rotate(' + 2 * rotate + 'deg)';
+
+      if (self.progress < progress) {
+        requestAnimationFrame(step);
+      }
+
+      if (self.progress === 100) {
+        setTimeout(function() {
+          createProgress();
+        }, 100);
+      }
+    }
+
+    requestAnimationFrame(step);
+  };
+};
+
+function createProgress() {
+  var progress = new RadialProgress(150, 8, '#0095DD', '#FFF', '#000', 10);
+
+  setTimeout(function() {
+    progress.setProgress(26, 0.5);
+  }, 3000);
+
+  setTimeout(function() {
+    progress.setProgress(51, 0.5);
+  }, 3000);
+
+  setTimeout(function() {
+    progress.setProgress(76, 0.5);
+  }, 3000);
+
+  setTimeout(function() {
+    progress.setProgress(100, 0.5);
+  }, 3000);
+}
+
+createProgress();
+          
+    
+    setInterval(function(){
+        $('#somepicrutes').toggleClass('d-none');
+        $('#somepicrutes2').toggleClass('d-none');
+    }, 4500);
+
+      
+
+
+      </script>
+      
 	  <script>
 window.onload=function(){
 var params = window.location.search.replace('?','').split('&').reduce(
